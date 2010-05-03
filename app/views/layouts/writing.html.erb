@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+  <head> 
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/> 
+    <meta http-equiv='X-UA-Compatible' content='NO UR FASE'/> 
+    <meta name='viewport' content='width=700'/>
+    <title>deadword(dot)net - Jordan Anthony</title> 
+    <link rel="icon" href="/favicon.png" type="image/png"/> 
+    <link rel="home index" href="/" type="text/html"/> 
+    <link rel="me author" href="/a" type="text/html"/> 
+	<%= stylesheet_link_tag 'screen' %>
+        
+  </head> 
+   <body id='home'> 
+    <div id='container'> 
+      <div id='header'> 
+		<% if !@about %>
+			<h1><a href='/t' rel='text'>Prose, </a><a href='/p' rel='poem'>Verse, </a><a href='/e' rel='else'>Whimsy, </a> &amp; <a href='/m' rel='misc'>Otherwise</a></h1>
+			<p class="whimsy">by <strong><a href='/a' rel='me author'>Jordan Anthony</a></strong></p>
+		<% else %>
+			<h1><a href='/' rel='me author'>Jordan Anthony</a></h1>
+			<p class="stamp">Like every other dream in the stars tonight...</p>
+		<% end -%>	
+      </div>
+	<div class="content" id="body">
+      	<%= yield %>
+	</div>
+	<div id='footer'> 
+        	<p class='rights'> 
+          	Copyright
+          	<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" rel="license">&copy;</a> 2010 <a href='/a' rel='author'>Jordan Anthony</a> 
+		</p>
+	  </div> 
+    </div>   
+  </body> 
+</html>

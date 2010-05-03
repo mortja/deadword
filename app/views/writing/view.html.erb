@@ -1,0 +1,10 @@
+<% if !@post.blank? %>
+
+	<div class="snip"><h2 class="list"><%= @post.title %></h2>
+	<p class = "stamp"><%= time_ago_in_words(@post.timestamp)%> ago</p>
+	<% @markdown_text = RDiscount.new(@post.body) %>
+	<%= @markdown_text.to_html %></div>
+	
+<% else %>
+<div class="gray" style="padding:1em"><h2 class="stamp">Invalid entry. Please reconsider.</h2></div>
+<% end %>
