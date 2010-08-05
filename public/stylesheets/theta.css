@@ -73,7 +73,6 @@ blockquote strong {
 
 tt, pre, code, samp, kbd {
 	font-family: "Gotham-Book", Helvetica, sans-serif;
-	font-weight: bold;
 	color: #ff0000;
 	font-size: 0.9em;
 }
@@ -82,8 +81,8 @@ pre, code {
 	color:#000;
 	padding:0.375em 0.25em 0.25em 0.375em;
 	border: 0.0em solid black;
-	border-left-width:0.4em;
-	border-right-width:0.4em;
+	border-left-width:0.2em;
+	/*border-right-width:0.4em;*/
 	line-height:1.5em;
 	overflow:auto;
 }
