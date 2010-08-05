@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "Hel-Roman";
-	src: url('/font/Hel-Roman.otf ') format('opentype');
+	src: url('/font/Gotham-Medium.otf ') format('opentype');
 }
 
 body {
-	font-family: Helvetica, "Hel-Roman", sans-serif;
+	font-family: "Hel-Roman",Helvetica, sans-serif;
 	color: #000;
 	background-color: #fff;
 	font-size: 1.15em;
@@ -63,7 +63,7 @@ blockquote strong {
 }
 
 tt, pre, code, samp, kbd {
-	font-family: Helvetica, "Hel-Roman", sans-serif;
+	font-family: "Hel-Roman", Helvetica, sans-serif;
 	font-weight: bold;
 	color: #ff0000;
 	font-size: 0.9em;
@@ -199,7 +199,7 @@ h3 {
 --------------------------------------------------------------------------- */
 
 .whimsy {
-	font-family: Geneva, Helvetica, "Hel-Roman", serif;
+	font-family: Geneva, "Hel-Roman",Helvetica, serif;
 }
 
 .list {
