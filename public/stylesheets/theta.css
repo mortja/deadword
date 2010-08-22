@@ -18,6 +18,7 @@ body {
 }
 
 p, ul, ol, dl, pre {
+	font-family: 'Gotham', Helvetica, sans-serif;
 	font-size: 1.0em;
 	margin:0.625em 0;
 	padding:0.375em 0.25em 0.25em 0.375em;
@@ -72,7 +73,7 @@ blockquote strong {
 }
 
 tt, pre, code, samp, kbd {
-	font-family: 'Gotham-Book', Helvetica, sans-serif;
+	font-family: 'Gotham', Helvetica, sans-serif;
 	color: #ff0000;
 	font-size: 1.1em;
 }
