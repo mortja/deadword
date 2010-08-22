@@ -10,11 +10,7 @@
 }
 
 body {
-<<<<<<< HEAD
 	font-family: "Gotham", Helvetica, sans-serif;
-=======
-	font-family: "Gotham",Helvetica, sans-serif;
->>>>>>> 9955beb73daa763165e6bb09e865ba18e753552c
 	color: #000;
 	background-color: #fff;
 	font-size: 1.15em;
@@ -213,11 +209,7 @@ h3 {
 --------------------------------------------------------------------------- */
 
 .whimsy {
-<<<<<<< HEAD
-	font-family: Geneva, "Gotham-Med", Helvetica, serif;
-=======
 	font-family: Geneva, "Gotham-Med",Helvetica, serif;
->>>>>>> 9955beb73daa763165e6bb09e865ba18e753552c
 }
 
 .list {
