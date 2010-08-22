@@ -98,6 +98,7 @@ a img {
 }
 
 a, a:link, a:visited{
+	font-family: 'Gotham', Helvetica, sans-serif;
 	color: black;
 	text-decoration: none;
 }
