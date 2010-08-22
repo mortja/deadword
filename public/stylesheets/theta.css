@@ -1,11 +1,11 @@
 @font-face {
-	font-family: "Gotham";
+	font-family: 'Gotham';
 	src: url('/font/Gotham-Book.otf ') format('opentype');
-	font-family: "Gotham-Ital";
+	font-family: 'Gotham-Ital';
 	src: url('/font/Gotham-BookItalic.otf ') format('opentype');
-	font-family: "Gotham-Med";
+	font-family: 'Gotham-Med';
 	src: url('/font/Gotham-Medium.otf ') format('opentype');
-	font-family: "Gotham-Bold";
+	font-family: 'Gotham-Bold';
 	src: url('/font/Gotham-Bold.otf ') format('opentype');
 }
 
@@ -18,7 +18,6 @@ body {
 }
 
 p, ul, ol, dl, pre {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	font-size: 1.0em;
 	margin:0.625em 0;
 	padding:0.375em 0.25em 0.25em 0.375em;
@@ -210,22 +209,19 @@ h3 {
 --------------------------------------------------------------------------- */
 
 .whimsy {
-	font-family: Geneva, 'Gotham-Med', Helvetica, serif;
+	font-family: 'Geneva', 'Gotham-Med', Helvetica, serif;
 }
 
 .list {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	margin:0 0 0.3em 0;
 	padding:0;
 }
 
 .caps {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	font-variant:small-caps;
 }
 
 .stamp {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	font-size: 0.7em;
 	line-height: 1em;
 	color: #000;
@@ -234,14 +230,12 @@ h3 {
 }
 
 .date {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	line-height: 1em;
 	color: #000;
 	letter-spacing: 0.1em;
 }
 
 .gray {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	font-size: 100%;
 	background: transparent;
 	padding:0.1em 1em 1em 1em;
@@ -250,7 +244,6 @@ h3 {
 }
 
 .snip {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	font-size: 80%;
 	padding:2.5em;
 	max-width:36em;
