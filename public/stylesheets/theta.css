@@ -1,10 +1,16 @@
 @font-face {
-	font-family: "Hel-Roman";
+	font-family: "Gotham";
+	src: url('/font/Gotham-Book.otf ') format('opentype');
+	font-family: "Gotham-Ital";
+	src: url('/font/Gotham-BookItalic.otf ') format('opentype');
+	font-family: "Gotham-Med";
 	src: url('/font/Gotham-Medium.otf ') format('opentype');
+	font-family: "Gotham-Bold";
+	src: url('/font/Gotham-Bold.otf ') format('opentype');
 }
 
 body {
-	font-family: "Hel-Roman",Helvetica, sans-serif;
+	font-family: "Gotham", Helvetica, sans-serif;
 	color: #000;
 	background-color: #fff;
 	font-size: 1.15em;
@@ -18,10 +24,12 @@ p, ul, ol, dl, pre {
 }
 
 i, em {
+	font-family: "Gotham-Ital", Helvetica, sans-serif;
 	font-style: italic;
 }
 
 b, strong {
+	font-family: "Gotham-Bold", Helvetica, sans-serif;
 	font-weight: bold;
 }
 
@@ -47,6 +55,7 @@ hr {
 }
 
 blockquote {
+	font-family: "Gotham-Ital", Helvetica, sans-serif;
 	font-style: italic;
 	margin: 1.25em 3.75em 1.25em 3.75em;
 	padding: 0;
@@ -63,18 +72,17 @@ blockquote strong {
 }
 
 tt, pre, code, samp, kbd {
-	font-family: "Hel-Roman", Helvetica, sans-serif;
-	font-weight: bold;
+	font-family: "Gotham-Book", Helvetica, sans-serif;
 	color: #ff0000;
-	font-size: 0.9em;
+	font-size: 1.1em;
 }
 
 pre, code {
 	color:#000;
 	padding:0.375em 0.25em 0.25em 0.375em;
 	border: 0.0em solid black;
-	border-left-width:0.4em;
-	border-right-width:0.4em;
+	border-left-width:0.2em;
+	/*border-right-width:0.4em;*/
 	line-height:1.5em;
 	overflow:auto;
 }
@@ -105,6 +113,7 @@ a:hover {
 --------------------------------------------------------------------------- */
 
 h1, h2, h3 {
+	font-family: "Gotham-Bold", Helvetica, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -180,6 +189,7 @@ h3 {
 --------------------------------------------------------------------------- */
 
 #footer {
+	font-family: "Gotham-Med", Helvetica, sans-serif;
 	clear: both;
 	color: #000;
 	font-size: 0.9em;
@@ -199,7 +209,7 @@ h3 {
 --------------------------------------------------------------------------- */
 
 .whimsy {
-	font-family: Geneva, "Hel-Roman",Helvetica, serif;
+	font-family: Geneva, "Gotham-Med", Helvetica, serif;
 }
 
 .list {
