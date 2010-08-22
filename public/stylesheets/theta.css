@@ -18,7 +18,6 @@ body {
 }
 
 p, ul, ol, dl, pre {
-	font-family: 'Gotham', Helvetica, sans-serif;
 	font-size: 1.0em;
 	margin:0.625em 0;
 	padding:0.375em 0.25em 0.25em 0.375em;
