@@ -223,6 +223,7 @@ h3 {
 }
 
 .stamp {
+	font-family: "Gotham", Helvetica, sans-serif;
 	font-size: 0.7em;
 	line-height: 1em;
 	color: #000;
@@ -231,12 +232,14 @@ h3 {
 }
 
 .date {
+	font-family: "Gotham", Helvetica, sans-serif;
 	line-height: 1em;
 	color: #000;
 	letter-spacing: 0.1em;
 }
 
 .gray {
+	font-family: "Gotham", Helvetica, sans-serif;
 	font-size: 100%;
 	background: transparent;
 	padding:0.1em 1em 1em 1em;
@@ -245,6 +248,7 @@ h3 {
 }
 
 .snip {
+	font-family: "Gotham", Helvetica, sans-serif;
 	font-size: 80%;
 	padding:2.5em;
 	max-width:36em;
