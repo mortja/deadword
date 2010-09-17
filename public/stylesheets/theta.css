@@ -236,7 +236,7 @@ h3 {
 	/*background: transparent;
 	padding:0.1em 1em 1em 1em;
 	max-width:33em;*/
-	margin:0.625em auto auto auto;
+	margin:0.625em auto 0.625em auto;
 }
 
 .snip {
@@ -252,7 +252,7 @@ img.icon {
 	float: left;
 	position: relative;
 	left: 15px;
-	bottom: 5px;
+	bottom: 10px;
 }
 
 /* IE Hacks
