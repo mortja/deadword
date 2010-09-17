@@ -250,6 +250,10 @@ img.icon {
 	height: 25px;
 	width: 25px;
 	float: left;
+	position: absolute;
+	display: inline-block;
+	left: 15px;
+	bottom: 15px;
 }
 
 /* IE Hacks
