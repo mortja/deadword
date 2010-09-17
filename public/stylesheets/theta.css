@@ -250,7 +250,7 @@ img.icon {
 	height: 25px;
 	width: 25px;
 	float: left;
-	position: absolute;
+	position: relative;
 	display: inline-block;
 	left: 15px;
 	bottom: 15px;
