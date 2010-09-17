@@ -231,6 +231,7 @@ h3 {
 	letter-spacing: 0.1em;
 	background-image: url(/images/dw_cal.png); 
 	background-position: top left;
+	background-repeat: no-repeat;
 }
 
 .gray {
