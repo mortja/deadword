@@ -226,7 +226,7 @@ h3 {
 }
 
 .date {
-	line-height: 1em;
+	/*line-height: 1em;*/
 	color: #000;
 	letter-spacing: 0.1em;
 }
