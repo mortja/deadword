@@ -229,6 +229,8 @@ h3 {
 	line-height: 1em;
 	color: #000;
 	letter-spacing: 0.1em;
+	background-image: url(/images/dw_cal.png); 
+	background-position: top left;
 }
 
 .gray {
