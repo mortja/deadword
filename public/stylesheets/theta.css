@@ -252,7 +252,7 @@ img.icontitle {
 	float: left;
 	position: relative;
 	left: -3px;
-	bottom: 1px;
+	bottom: 0px;
 }
 
 img.icontime {
