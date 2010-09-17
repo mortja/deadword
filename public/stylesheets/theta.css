@@ -246,6 +246,12 @@ h3 {
 	margin:2.5em auto 0.625em auto;
 }
 
+img.icon {
+	height: 35px;
+	width: 35px;
+	float: left;
+}
+
 /* IE Hacks
 --------------------------------------------------------------------------- */
 
