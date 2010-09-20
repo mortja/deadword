@@ -110,8 +110,7 @@ a:hover {
 	background: transparent;
 	color:#ff0000;
 	text-decoration:none;
-	-webkit-transition: color .25s linear;
-	-webkit-transition: font-size 50% linear;
+	-webkit-transition: color .25s linear, font-size 50%;
 	transition: color .25s linear;
 }
 
