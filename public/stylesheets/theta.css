@@ -110,8 +110,8 @@ a:hover {
 	background: transparent;
 	color:#ff0000;
 	text-decoration:none;
-	-webkit-transition: color .7s linear;
-	transition: color .7s linear;
+	-webkit-transition: color .4s linear;
+	transition: color .4s linear;
 }
 
 /* Headings
