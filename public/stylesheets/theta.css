@@ -111,6 +111,7 @@ a:hover {
 	color:#ff0000;
 	text-decoration:none;
 	-webkit-transition: color .25s linear;
+	-webkit-transition: font-size 50% linear;
 	transition: color .25s linear;
 }
 
