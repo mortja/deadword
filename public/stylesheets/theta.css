@@ -103,9 +103,6 @@ a, a:link, a:visited{
 	text-decoration: none;
 	/*-webkit-transition: color .25s linear .1s;
 	transition: color .25s linear .1s;*/
-	-webkit-transition-property:color, font-size;  
-	-webkit-transition-duration: 1s, 1s;  
-	-webkit-transition-timing-function: linear, ease-in;
 	
 }
 
@@ -113,8 +110,11 @@ a:hover {
 	background: transparent;
 	color:#ff0000;
 	text-decoration:none;
-	-webkit-transition: color .25s linear, percentage font-size 50;
-	transition: color .25s linear;
+	/*-webkit-transition: color .25s linear, percentage font-size 50;
+	transition: color .25s linear;*/
+	-webkit-transition-property:color, font-size;  
+	-webkit-transition-duration: 1s, 1s;  
+	-webkit-transition-timing-function: linear, ease-in;
 }
 
 /* Headings
