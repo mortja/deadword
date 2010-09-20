@@ -1,6 +1,6 @@
 
 <% @poems_by_month.each do |month_year, posts| %>
-<div class="gray"><h2 class="date"><%= month_year %></h2>
+	<div class="gray"><h2 class="date"><%= month_year %></h2>
 		<% posts.each do |post| %>
 		<p class="list"><img class="icontitle" src="images/dw_doc.png"><a href="/v/<%= post.id %>"><%= "%02d" % post.timestamp.month %>/<%= "%02d" % post.timestamp.day %> - <%= post.title %></a></p>
 		<p class = "stamp"><img class="icontime" src="images/dw_clock.png"><%= time_ago_in_words(post.timestamp)%> ago</p><br/>
