@@ -107,7 +107,7 @@ a:hover {
 	background: transparent;
 	color:#ff0000;
 	text-decoration:none;
-	-webkit-transition: color .25s linear;
+	-webkit-transition: color .50s ease-in;
 }
 
 /* Headings
