@@ -101,8 +101,8 @@ a img {
 a, a:link, a:visited{
 	color: black;
 	text-decoration: none;
-	-webkit-transition: color .4s linear .1s;
-	transition: color .4s linear .1s;
+	-webkit-transition: color .25s linear .1s;
+	transition: color .25s linear .1s;
 	
 }
 
@@ -110,8 +110,8 @@ a:hover {
 	background: transparent;
 	color:#ff0000;
 	text-decoration:none;
-	-webkit-transition: color .4s linear;
-	transition: color .4s linear;
+	-webkit-transition: color .25s linear;
+	transition: color .25s linear;
 }
 
 /* Headings
