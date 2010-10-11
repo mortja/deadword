@@ -11067,3 +11067,157 @@ Processing WritingController#view (for 127.0.0.1 at 2010-10-11 16:19:01) [GET]
 Rendering template within layouts/writing
 Rendering writing/view
 Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/v/5]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-11 16:54:08) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '5') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/v/5]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-11 16:54:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = '5') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/v/5]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-11 16:54:51) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 16:54:51) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 16:55:00) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 16:55:48) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 16:57:37) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 16:57:55) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-11 17:01:21) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-11 17:01:23) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 17:01:23) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 17:08:49) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-11 17:08:56) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-11 17:08:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = '3') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/v/3]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-11 17:43:36) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-11 17:43:43) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 17:43:43) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-11 17:43:45) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 17:43:50) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-11 18:01:37) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-11 18:01:44) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-11 18:01:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = '3') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/v/3]

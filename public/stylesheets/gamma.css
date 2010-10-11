@@ -14,7 +14,7 @@ body
   -webkit-background-size:100% auto;
   background-attachment:fixed;
   background-color:#222;
-  /*background-image:url('../images/background.jpg');*/
+  background-image:url('/images/background.png');
   background-position:center;
   background-size:100% auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,6 +40,8 @@ a
 {
   color:#000;
   text-decoration:none;
+  -webkit-transition: color .5s linear .1s;
+  transition: color .5s linear .1s;
 }
 
 a img{
@@ -48,7 +50,9 @@ a img{
 
 a:hover, a:hover
 {
-  color:#444;
+  color:#f00;
+  -webkit-transition: color .5s linear .1s;
+  transition: color .5s linear .1s;
 }
 
 abbr {
@@ -60,7 +64,6 @@ abbr {
 
 div#wrapper
 {
-  background-image: url('/images/gradient.png');
   background-position: center;
   background-repeat: repeat-y;
   min-width:490px;
