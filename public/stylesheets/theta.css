@@ -114,7 +114,7 @@ a:hover {
 	transition: color .25s linear;
 }
 
-#container {
+#content {
 	background-image: url('/images/gradient.png');
 	background-position: center;
 	background-repeat: repeat-y;
