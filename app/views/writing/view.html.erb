@@ -1,7 +1,6 @@
 <% if !@post.blank? %>
-
-	<div class="snip"><h2 class="list"><%= @post.title %></h2>
-	<p class = "stamp"><%= time_ago_in_words(@post.timestamp)%> ago</p>
+	<div><h3><%= @post.title %></h3>
+	<p class="tuck">&rarr; <%= time_ago_in_words(@post.timestamp)%> ago</p><br/>
 	<% @markdown_text = RDiscount.new(@post.body) %>
 	<%= @markdown_text.to_html %></div>
 	

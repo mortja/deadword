@@ -1,6 +1,6 @@
 <div class="snip">
-<p class="stamp">Recently...</p>
+<p>Recently...</p>
 <h3><a href="/v/<%=h @last_post.id %>"><%=h @last_post.title %></a></h3>
-<p class="stamp"><%=h time_ago_in_words(@last_post.timestamp) %> ago</p>
-<p><%= truncate(@last_post.body, :length => 150 ) %></p>
+<p class="tuck">&rarr; <%=h time_ago_in_words(@last_post.timestamp) %> ago<p>
+<p><%= truncate(@last_post.body, :length => 250 ) %></p>
 </div>
