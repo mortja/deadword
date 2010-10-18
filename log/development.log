@@ -11768,3 +11768,186 @@ Processing WritingController#view (for 127.0.0.1 at 2010-10-18 15:03:53) [GET]
 Rendering template within layouts/writing
 Rendering writing/view
 Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/v/6]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 15:52:44) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:54:32) [GET]
+
+ActionController::RoutingError (No route matches "/400.html" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:54:47) [GET]
+
+ActionController::RoutingError (No route matches "/adsorm%20foamf.html" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:54:50) [GET]
+
+ActionController::RoutingError (No route matches "/adsorm%20foamf" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 15:54:55) [GET]
+  Parameters: {"id"=>"4mm4m4m"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '4mm4m4m') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/v/4mm4m4m]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:56:52) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:57:49) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:58:34) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:59:08) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:59:38) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 16:02:36) [GET]
+
+ActionController::RoutingError (No route matches "/emeomf" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:02:40) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:03:44) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 16:03:44) [GET]
+
+ActionController::RoutingError (No route matches "/v/images/kitten.jpg" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:03:53) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 66ms (View: 61, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 16:03:53) [GET]
+
+ActionController::RoutingError (No route matches "/v/..images/kitten.jpg" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:04:17) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 16:04:17) [GET]
+
+ActionController::RoutingError (No route matches "/..images/kitten.jpg" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:04:27) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 65ms (View: 5, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:04:35) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:04:40) [GET]
+  Parameters: {"id"=>"emeomf"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 'emeomf') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/v/emeomf]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 16:05:00) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '17') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/v/17]
