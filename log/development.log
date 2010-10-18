@@ -11303,3 +11303,17 @@ Processing WritingController#about (for 127.0.0.1 at 2010-10-12 00:00:45) [GET]
 Rendering template within layouts/writing
 Rendering writing/about
 Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-14 21:11:31) [GET]
+  [4;36;1mPost Load (426.7ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 1802ms (View: 1250, DB: 427) | 200 OK [http://localhost/]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-14 21:11:42) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 361ms (View: 23, DB: 0) | 200 OK [http://localhost/t]
