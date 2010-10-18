@@ -11317,3 +11317,454 @@ Processing WritingController#text (for 127.0.0.1 at 2010-10-14 21:11:42) [GET]
 Rendering template within layouts/writing
 Rendering writing/text
 Completed in 361ms (View: 23, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:49:23) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 313ms (View: 281, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-10-18 14:49:32) [GET]
+Filter chain halted as [:admin_authenticate] rendered_or_redirected.
+Completed in 3ms (View: 3, DB: 0) | 401 Unauthorized [http://localhost/posts/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-10-18 14:49:37) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY timestamp DESC[0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mCategory Load (10.6ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 200ms (View: 182, DB: 11) | 200 OK [http://localhost/posts/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 14:49:37) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-10-18 14:49:40) [GET]
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 28ms (View: 21, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-10-18 14:51:21) [POST]
+  Parameters: {"category"=>"1", "commit"=>"Create", "post"=>{"timestamp(2i)"=>"10", "timestamp(3i)"=>"18", "timestamp(4i)"=>"14", "body"=>"This post is purely to test the rdiscount function. I am assuming it will fail horribly and I will cock everything up. If that is not the case I will put on my ##sunglasses## and be a badass. I am still betting against myself. ##Place your bets.", "title"=>"Truth &amp; Potato", "timestamp(5i)"=>"49", "timestamp(1i)"=>"2010"}, "authenticity_token"=>"sjSQMZgoxwagHwKn0vzE1dfUyt7b3gHlqgTF3N4l9Vc="}
+Filter chain halted as [:admin_authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-10-18 14:51:21) [POST]
+  Parameters: {"category"=>"1", "commit"=>"Create", "post"=>{"timestamp(2i)"=>"10", "timestamp(3i)"=>"18", "timestamp(4i)"=>"14", "body"=>"This post is purely to test the rdiscount function. I am assuming it will fail horribly and I will cock everything up. If that is not the case I will put on my ##sunglasses## and be a badass. I am still betting against myself. ##Place your bets.", "title"=>"Truth &amp; Potato", "timestamp(5i)"=>"49", "timestamp(1i)"=>"2010"}, "authenticity_token"=>"sjSQMZgoxwagHwKn0vzE1dfUyt7b3gHlqgTF3N4l9Vc="}
+  [4;36;1mPost Create (0.5ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "body", "timestamp", "updated_at", "category_id") VALUES('2010-10-18 19:51:21', 'Truth &amp; Potato', 'This post is purely to test the rdiscount function. I am assuming it will fail horribly and I will cock everything up. If that is not the case I will put on my ##sunglasses## and be a badass. I am still betting against myself. ##Place your bets.', '2010-10-18 19:49:00', '2010-10-18 19:51:21', 1)[0m
+Redirected to http://localhost:3000/posts/6
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-18 14:51:21) [GET]
+  Parameters: {"id"=>"6"}
+Filter chain halted as [:admin_authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/posts/6]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-18 14:51:21) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 366ms (View: 360, DB: 0) | 200 OK [http://localhost/posts/6]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 14:51:26) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '6') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 80ms (View: 74, DB: 0) | 200 OK [http://localhost/v/6]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-18 14:51:34) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 35ms (View: 28, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#text (for 127.0.0.1 at 2010-10-18 14:51:35) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."category_id" = '1') ORDER BY timestamp DESC[0m
+Rendering template within layouts/writing
+Rendering writing/text
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/t]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-18 14:51:36) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:51:36) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 14:51:42) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '6') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/v/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 14:51:46) [GET]
+
+ActionController::RoutingError (No route matches "/edit/6" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 14:51:50) [GET]
+
+ActionController::RoutingError (No route matches "/osts//6" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-18 14:51:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 79ms (View: 73, DB: 0) | 200 OK [http://localhost/posts/6]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-10-18 14:51:57) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 44ms (View: 36, DB: 0) | 200 OK [http://localhost/posts/6/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-10-18 14:52:08) [PUT]
+  Parameters: {"category"=>"1", "commit"=>"Update", "post"=>{"timestamp(2i)"=>"10", "timestamp(3i)"=>"18", "timestamp(4i)"=>"14", "body"=>"This post is purely to test the rdiscount function. I am assuming it will fail horribly and I will cock everything up. If that is not the case I will put on my \r\n\r\n##sunglasses##\r\n\r\nand be a badass. I am still betting against myself. \r\n\r\n##Place your bets.", "title"=>"Truth &amp; Potato", "timestamp(5i)"=>"49", "timestamp(1i)"=>"2010"}, "authenticity_token"=>"sjSQMZgoxwagHwKn0vzE1dfUyt7b3gHlqgTF3N4l9Vc=", "id"=>"6"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+  [4;35;1mPost Update (0.3ms)[0m   [0mUPDATE "posts" SET "updated_at" = '2010-10-18 19:52:08', "body" = 'This post is purely to test the rdiscount function. I am assuming it will fail horribly and I will cock everything up. If that is not the case I will put on my 
+
+##sunglasses##
+
+and be a badass. I am still betting against myself. 
+
+##Place your bets.' WHERE "id" = 6[0m
+Redirected to http://localhost:3000/posts/6
+Completed in 29ms (DB: 0) | 302 Found [http://localhost/posts/6]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-18 14:52:08) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/6]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 14:52:14) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = '6') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/v/6]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-18 14:52:18) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:52:18) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 25ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:55:54) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+
+ActionView::TemplateError (undefined method `mb_chars' for #<RDiscount:0x1044b5ed8>) on line #6 of app/views/writing/index.html.erb:
+3: <h3><a href="/v/<%=h @last_post.id %>"><%=h @last_post.title %></a></h3>
+4: <p class="tuck">&rarr; <%=h time_ago_in_words(@last_post.timestamp) %> ago</p>
+5: <%= @markdown_text = RDiscount.new(@last_post.body) %>
+6: <%= truncate(@markdown_text, :length => 250 ) %>
+7: <p><%= @markdown_text.to_html %></p>
+8: </div>
+
+    app/views/writing/index.html.erb:6
+    server:3
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 14:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:57:29) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+ERROR: compiling _run_erb_app47views47writing47index46html46erb RAISED compile error
+/Users/John/deadword/app/views/writing/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ncat(( truncate(@markdown text.to_html, length => 250) ).to_...
+                              ^
+/Users/John/deadword/app/views/writing/index.html.erb:6: syntax error, unexpected tASSOC, expecting '='
+...rkdown text.to_html, length => 250) ).to_s); @output_buffer....
+                              ^
+/Users/John/deadword/app/views/writing/index.html.erb:6: syntax error, unexpected ')', expecting kEND
+...o_html, length => 250) ).to_s); @output_buffer.concat "</p>\...
+                              ^
+Function body:           def _run_erb_app47views47writing47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"snip\">\n<p>Recently...</p>\n<h3><a href=\"/v/"
+
+; @output_buffer.concat((h @last_post.id ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h @last_post.title ).to_s); @output_buffer.concat "</a></h3>\n<p class=\"tuck\">&rarr; "
+; @output_buffer.concat((h time_ago_in_words(@last_post.timestamp) ).to_s); @output_buffer.concat " ago</p>\n"
+; @output_buffer.concat(( @markdown_text = RDiscount.new(@last_post.body) ).to_s); @output_buffer.concat "\n<p>"
+; @output_buffer.concat(( truncate(@markdown text.to_html, length => 250) ).to_s); @output_buffer.concat "</p>\n</div>\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/John/deadword/app/views/writing/index.html.erb:11:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+server:3
+
+ActionView::TemplateError (compile error
+/Users/John/deadword/app/views/writing/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ncat(( truncate(@markdown text.to_html, length => 250) ).to_...
+                              ^
+/Users/John/deadword/app/views/writing/index.html.erb:6: syntax error, unexpected tASSOC, expecting '='
+...rkdown text.to_html, length => 250) ).to_s); @output_buffer....
+                              ^
+/Users/John/deadword/app/views/writing/index.html.erb:6: syntax error, unexpected ')', expecting kEND
+...o_html, length => 250) ).to_s); @output_buffer.concat "</p>\...
+                              ^) on line #6 of app/views/writing/index.html.erb:
+3: <h3><a href="/v/<%=h @last_post.id %>"><%=h @last_post.title %></a></h3>
+4: <p class="tuck">&rarr; <%=h time_ago_in_words(@last_post.timestamp) %> ago</p>
+5: <%= @markdown_text = RDiscount.new(@last_post.body) %>
+6: <p><%= truncate(@markdown text.to_html, length => 250) %></p>
+7: </div>
+
+    app/views/writing/index.html.erb:11:in `compile!'
+    server:3
+
+Rendered rescues/_trace (113.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 14:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:57:58) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+
+ActionView::TemplateError (undefined local variable or method `length' for #<ActionView::Base:0x1043319e0>) on line #6 of app/views/writing/index.html.erb:
+3: <h3><a href="/v/<%=h @last_post.id %>"><%=h @last_post.title %></a></h3>
+4: <p class="tuck">&rarr; <%=h time_ago_in_words(@last_post.timestamp) %> ago</p>
+5: <%= @markdown_text = RDiscount.new(@last_post.body) %>
+6: <p><%= truncate(@markdown_text.to_html, length => 250) %></p>
+7: </div>
+
+    app/views/writing/index.html.erb:6
+    server:3
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 14:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:59:16) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 14:59:43) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-18 14:59:51) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/6]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-10-18 14:59:53) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 25ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/6/edit]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 15:00:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '6') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/v/6]
+
+
+Processing WritingController#about (for 127.0.0.1 at 2010-10-18 15:00:07) [GET]
+Rendering template within layouts/writing
+Rendering writing/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/a]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 15:00:08) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 33ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 15:02:49) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing WritingController#index (for 127.0.0.1 at 2010-10-18 15:03:49) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WritingController#view (for 127.0.0.1 at 2010-10-18 15:03:53) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = '6') LIMIT 1[0m
+Rendering template within layouts/writing
+Rendering writing/view
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/v/6]
