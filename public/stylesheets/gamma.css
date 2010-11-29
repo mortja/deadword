@@ -12,7 +12,7 @@ body
   -moz-background-size:100% 100% auto;
   -o-background-size:100% 100% auto;
   -webkit-background-size:100% 100% auto;
-  background-attachment:absolute;
+  background-attachment:fixed;
   background-color:#222;
   background-image:url('/images/background.jpg');
   background-position:center;
