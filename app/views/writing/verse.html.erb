@@ -1,7 +1,7 @@
-
+<h2>&there4; Verse</h2><br/>
 <% @poems_by_month.each do |month_year, posts| %>
 	<div>
-		<h2><%= month_year %></h2>
+		<h3><%= month_year %></h3>
 		<% posts.each do |post| %>
 			<p><a href="/v/<%= post.id %>"><%= "%02d" % post.timestamp.month %>/<%= "%02d" % post.timestamp.day %> - <%= post.title %></a><br/>
 			&rarr; <%= time_ago_in_words(post.timestamp)%> ago</p>
