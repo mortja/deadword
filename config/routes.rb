@@ -37,10 +37,10 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "writing", :action => "index"
-  map.t '/p', :controller => "writing", :action => "prose"
-  map.p '/v', :controller => "writing", :action => "verse"
+  map.p '/p', :controller => "writing", :action => "prose"
+  map.v '/v', :controller => "writing", :action => "verse"
   # map.e '/e', :controller => "writing", :action => "else"
-  map.m '/o', :controller => "writing", :action => "other"
+  map.o '/o', :controller => "writing", :action => "other"
   map.a '/a', :controller => "writing", :action => "about"
   map.connect 'v/:id', :controller => 'writing', :action => 'view'
 
