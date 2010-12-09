@@ -1,9 +1,9 @@
 class WritingController < ApplicationController
-  def text
+  def prose
     @poems_by_month = Post.find_all_by_category_id("1", :order => "timestamp DESC").group_by { |post| post.timestamp.strftime("%B %Y") }
   end
 
-  def poem
+  def verse
     #@poems = Post.find_all_by_category_id("2")
     @poems_by_month = Post.find_all_by_category_id("2", :order => "timestamp DESC").group_by { |post| post.timestamp.strftime("%B %Y") }
   end
@@ -12,7 +12,7 @@ class WritingController < ApplicationController
     @poems_by_month = Post.find_all_by_category_id("3", :order => "timestamp DESC").group_by { |post| post.timestamp.strftime("%B %Y") }
   end
 
-  def misc
+  def other
     @poems_by_month = Post.find_all_by_category_id("4", :order => "timestamp DESC").group_by { |post| post.timestamp.strftime("%B %Y") }
   end
   
